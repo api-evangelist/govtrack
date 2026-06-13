@@ -1,0 +1,36 @@
+name: GovTrack FinOps
+description: GovTrack is a free, open-access platform with no paid API tiers. Cost management is primarily about responsible usage and avoiding unnecessary API calls rather than managing spend.
+url: https://www.govtrack.us/about
+model: free-open
+monetization:
+  primary: voluntary donations and ad-supported website
+  api_cost: free
+  api_key_required: false
+cost_drivers:
+  - driver: API call volume
+    risk: low
+    notes: No per-call charges. Excessive usage may result in IP throttling without notice.
+  - driver: Data storage
+    risk: low
+    notes: Consumers bear their own storage costs for cached or persisted data.
+  - driver: Bulk data
+    risk: none
+    notes: Bulk data is available via the unitedstates/congress open-source project at no cost.
+recommendations:
+  - Implement local caching for frequently accessed endpoints (bills, members) to reduce API calls
+  - Use the unitedstates/congress scrapers for one-time or periodic bulk data ingestion
+  - Cache congressional session data; it changes infrequently
+  - Monitor API response times; no SLA is published
+  - Consider supporting GovTrack via donation if using data commercially
+optimization:
+  - Use field filtering (?fields=) to reduce payload size
+  - Use offset pagination efficiently; avoid re-fetching already retrieved pages
+  - Leverage the CSV export format for batch processing
+support:
+  email: hello@govtrack.us
+  url: https://www.govtrack.us/contact
+notes: >
+  GovTrack is operated by Civic Impulse, LLC, a small organization with 2-10
+  employees. The platform has been free since 2004. Financial sustainability
+  relies on voluntary user support. Enterprise consumers integrating GovTrack
+  data should strongly consider donating to support the service.

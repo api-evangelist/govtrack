@@ -1,0 +1,37 @@
+name: GovTrack Plans & Pricing
+description: GovTrack provides free, open access to U.S. Congressional data with no paid tiers or API keys required. The platform is funded through voluntary donations and a premium account upgrade that removes ads.
+url: https://www.govtrack.us/about
+plans:
+  - name: Free
+    description: Full access to all GovTrack data and the public API at no cost. No API key required. Open to all users.
+    price: 0
+    currency: USD
+    period: month
+    rateLimit:
+      requests: unlimited
+      notes: >
+        GovTrack does not publish formal rate limits. Reasonable use is expected.
+        The underlying API is read-only and powered by django-simplegetapi.
+    features:
+      - Bill tracking and status
+      - Voting records (roll call votes)
+      - Member of Congress profiles
+      - Committee information
+      - Cosponsorship data
+      - API access (no key required)
+      - Bulk data via github.com/unitedstates
+  - name: Ad-Free Account
+    description: Optional upgrade to remove advertising from the website. Does not add additional API capabilities.
+    price: variable
+    currency: USD
+    period: month
+    notes: Voluntary donation / supporter account. Pricing based on donation amount.
+    features:
+      - Ad-free browsing
+      - Same data access as free tier
+notes: >
+  GovTrack deprecated its dedicated bulk data and API services in December 2016
+  (effective summer 2017) as Congress began publishing its own structured data.
+  The website continues to expose API endpoints via django-simplegetapi at
+  https://www.govtrack.us/api/v2/ for read-only access to bills, votes,
+  persons, committees, and related resources.

@@ -1,0 +1,32 @@
+name: GovTrack Rate Limits
+description: GovTrack does not publish formal rate limits for its public API. The API is free and open with no authentication required. Reasonable use is expected; aggressive scraping or bulk downloading should use the congress project scrapers or the unitedstates/congress GitHub repository instead.
+url: https://www.govtrack.us/developers/api
+limits:
+  - tier: Public (Unauthenticated)
+    requests_per_second: unspecified
+    requests_per_minute: unspecified
+    requests_per_day: unspecified
+    authentication: none
+    notes: >
+      No API key or authentication is required. GovTrack uses django-simplegetapi
+      to expose read-only API endpoints. Filtering is restricted to indexed fields
+      to prevent runaway queries. For bulk data needs, the recommended approach is
+      to use the unitedstates/congress open-source scrapers.
+pagination:
+  type: offset
+  default_limit: 20
+  max_limit: 6000
+  parameters:
+    - name: limit
+      description: Number of results to return per page
+    - name: offset
+      description: Number of results to skip
+response_formats:
+  - json
+  - jsonp
+  - csv
+  - xml
+guidelines:
+  - Avoid high-frequency polling; use webhooks or scheduled fetches where possible
+  - For bulk data access use github.com/unitedstates/congress scrapers
+  - Cache responses to reduce repeated identical requests
