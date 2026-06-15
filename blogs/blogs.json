@@ -3,7 +3,7 @@
   "name": "GovTrack Blog",
   "url": "https://www.govtrack.us/blog/",
   "feed": "https://www.govtrack.us/blog/feed/",
-  "fetched": "2026-06-13",
+  "fetched": "2026-06-14T20:42:17Z",
   "posts": [
     {
       "title": "Site Updates in 2017",
@@ -65,5 +65,16 @@
       "date": "Tue, 11 Aug 2015 12:43:18 +0000",
       "description": "Today I\u2019m turning the lights off on GovTrack\u2019s state-level legislative tracking pages. I added state-level legislative tracking in 2012,\u00a0through a \u2026 More"
     }
-  ]
+  ],
+  "repo": "govtrack",
+  "feeds": [
+    {
+      "source": "https://www.linkedin.com/company/govtrack",
+      "feed_url": "https://www.linkedin.com/company/govtrack",
+      "title": "",
+      "saved": 0,
+      "method": "none"
+    }
+  ],
+  "post_count": 0
 }
