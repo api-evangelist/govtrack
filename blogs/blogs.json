@@ -1,73 +1,13 @@
 {
-  "aid": "govtrack",
-  "name": "GovTrack Blog",
-  "url": "https://www.govtrack.us/blog/",
-  "feed": "https://www.govtrack.us/blog/feed/",
-  "fetched": "2026-06-14T20:42:17Z",
-  "posts": [
-    {
-      "title": "Site Updates in 2017",
-      "url": "https://govtracknews.wordpress.com/2017/12/12/site-updates-in-2017/",
-      "date": "Tue, 12 Dec 2017 23:44:28 +0000",
-      "description": "Hi everyone! Your GovTrackers Jesse, Amy, Ben, and Josh have been busy since our last update in 2016 adding new \u2026 More"
-    },
-    {
-      "title": "2017 Backer Update",
-      "url": "https://govtracknews.wordpress.com/2017/07/30/2017-backer-update/",
-      "date": "Sun, 30 Jul 2017 12:26:48 +0000",
-      "description": "Thank you to our users for the incredible support you have given us. For those that have supported us on \u2026 More"
-    },
-    {
-      "title": "How a complex network of bills becomes a law: Introducing a new data analysis of text incorporation!",
-      "url": "https://govtracknews.wordpress.com/2017/01/07/how-a-complex-network-of-bills-becomes-a-law-introducing-a-new-data-analysis-of-text-incorporation/",
-      "date": "Sat, 07 Jan 2017 17:12:23 +0000",
-      "description": "A new analysis we incorporated into GovTrack late last year reveals when provisions of bills are incorporated into other bills. \u2026 More"
-    },
-    {
-      "title": "Ending GovTrack\u2019s bulk data and API",
-      "url": "https://govtracknews.wordpress.com/2016/12/10/ending-govtracks-bulk-data-and-api/",
-      "date": "Sat, 10 Dec 2016 15:22:05 +0000",
-      "description": "Open legislative data has been a core part of GovTrack\u2019s mission since 2005, when there wasn\u2019t very much of it. \u2026 More"
-    },
-    {
-      "title": "GovTrack Site Updates in 2016",
-      "url": "https://govtracknews.wordpress.com/2016/11/26/govtrack-site-updates-in-2016/",
-      "date": "Sat, 26 Nov 2016 20:52:19 +0000",
-      "description": "This past year was a busy year for us. We\u2019ve made many improvements throughout the site and thanks to users \u2026 More"
-    },
-    {
-      "title": "Presidential Candidates Miss Votes",
-      "url": "https://govtracknews.wordpress.com/2015/10/27/presidential-candidates-miss-votes/",
-      "date": "Tue, 27 Oct 2015 05:20:44 +0000",
-      "description": "Update: Check out our real-time presidential candidates missed votes tracker. \u2014\u2014\u2014\u2014\u2014 The 2016 presidential candidates are under a lot of \u2026 More"
-    },
-    {
-      "title": "No Speaker since 1933 was elected with more than one vote from the minority party",
-      "url": "https://govtracknews.wordpress.com/2015/10/09/no-speaker-since-1933-was-elected-with-more-than-one-vote-from-the-minority-party/",
-      "date": "Fri, 09 Oct 2015 14:59:36 +0000",
-      "description": "With the Republican party now selecting their nominee for the next Speaker of the House, there\u2019s been some discussion of \u2026 More"
-    },
-    {
-      "title": "GovTrack Updates for Spring/Summer 2015",
-      "url": "https://govtracknews.wordpress.com/2015/10/04/govtrack-updates-for-spring-summer-2015/",
-      "date": "Sun, 04 Oct 2015 15:25:23 +0000",
-      "description": "Here\u2019s what\u2019s new on GovTrack this Spring & Summer: GovTrack Insider After running a summer-long experiment with intern Ben, we \u2026 More"
-    },
-    {
-      "title": "Users report GovTrack makes them more confident about approaching government",
-      "url": "https://govtracknews.wordpress.com/2015/08/28/users-report-govtrack-makes-them-more-confident-about-approaching-government/",
-      "date": "Fri, 28 Aug 2015 18:49:38 +0000",
-      "description": "This summer GovTrack ran a survey of its users to learn more about the site\u2019s effectiveness. The survey, run in \u2026 More"
-    },
-    {
-      "title": "Discontinuing state-level legislative tracking",
-      "url": "https://govtracknews.wordpress.com/2015/08/11/discontinuing-state-level-legislative-tracking/",
-      "date": "Tue, 11 Aug 2015 12:43:18 +0000",
-      "description": "Today I\u2019m turning the lights off on GovTrack\u2019s state-level legislative tracking pages. I added state-level legislative tracking in 2012,\u00a0through a \u2026 More"
-    }
-  ],
   "repo": "govtrack",
   "feeds": [
+    {
+      "source": "https://govtracknews.wordpress.com/feed/",
+      "feed_url": "https://govtracknews.wordpress.com/feed/",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
     {
       "source": "https://www.linkedin.com/company/govtrack",
       "feed_url": "https://www.linkedin.com/company/govtrack",
@@ -76,5 +16,6 @@
       "method": "none"
     }
   ],
+  "fetched": "2026-06-27T12:03:07Z",
   "post_count": 0
 }
