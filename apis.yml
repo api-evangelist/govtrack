@@ -39,6 +39,8 @@ apis:
         email: hello@govtrack.us
         url: https://www.govtrack.us/contact
 common:
+  - type: DomainSecurity
+    url: security/govtrack-domain-security.yml
   - type: Website
     url: https://www.govtrack.us
   - type: Documentation
