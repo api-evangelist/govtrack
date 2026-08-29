@@ -1,6 +1,17 @@
 aid: govtrack
 name: GovTrack
 description: GovTrack is a free, open-access platform for tracking the United States Congress, providing legislative data since 2004. It offers a REST API for accessing bill status, voting records, Congressional member information, committee data, and cosponsorship records — all without authentication or API keys. Operated by Civic Impulse, LLC, GovTrack serves millions of users annually including journalists, legislative professionals, educators, and the general public.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: free
   onboarding: unknown
