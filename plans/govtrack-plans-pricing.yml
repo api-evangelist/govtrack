@@ -39,3 +39,24 @@ notes: >
   The website continues to expose API endpoints via django-simplegetapi at
   https://www.govtrack.us/api/v2/ for read-only access to bills, votes,
   persons, committees, and related resources.
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - free
+  units: []
+  plans:
+  - name: Free
+    access: other
+    model: free
+    model_how: derived
+    units: []
+    periods:
+    - month
+  - name: Ad-Free Account
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - month
