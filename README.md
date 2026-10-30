@@ -64,58 +64,104 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-GovTrack is a free, open-access platform for tracking the United States Congress. It has provided legislative transparency data since 2004, serving millions of users including journalists, legislative professionals, educators, and the general public. GovTrack is operated by Civic Impulse, LLC and maintained by Joshua Tauberer.
+GovTrack is a free, open-access platform for tracking the United States Congress, providing legislative data since 2004. It offers a REST API for accessing bill status, voting records, Congressional member information, committee data, and cosponsorship records — all without authentication or API keys. Operated by Civic Impulse, LLC, GovTrack serves millions of users annually including journalists, legislative professionals, educators, and the general public.
 
-## API
+**Areas:** Government · Legislative · Congress · Bills · Voting Records · Political Data · Open Government · United States
 
-GovTrack exposes a read-only REST API at `https://www.govtrack.us/api/v2/` powered by django-simplegetapi. No authentication or API key is required.
+## GovTrack on APIs.io
 
-**Base URL:** `https://www.govtrack.us/api/v2/`
+Everything profiled for GovTrack is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/govtrack/](https://apis.io/providers/govtrack/)** — or go straight to one of the APIs or properties below.
 
-**Available Endpoints:**
+### APIs (1)
 
-| Endpoint | Description |
+- [GovTrack REST API](https://apis.io/apis/govtrack/govtrack-api/) — Read-only REST API providing access to U.S. Congressional data including bills and resolutions, roll call votes, member profiles, committee information,…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Govtrack Domain Security](https://apis.io/security/govtrack/govtrack-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Govtrack Plans Pricing](https://apis.io/plans/govtrack/govtrack-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Govtrack Rate Limits](https://apis.io/rate-limits/govtrack/govtrack-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Govtrack Finops](https://apis.io/finops/govtrack/govtrack-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.govtrack.us)
+- [Documentation](https://www.govtrack.us/developers/api)
+- [Pricing](https://www.govtrack.us/about)
+- [Blog](https://www.govtrack.us/blog/)
+
+## API Evangelist rating
+
+**Kin Score 16.5** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
 |---|---|
-| `/api/v2/bill` | Bills and resolutions |
-| `/api/v2/vote` | Roll call votes |
-| `/api/v2/vote_voter` | Individual voting records |
-| `/api/v2/person` | Members of Congress |
-| `/api/v2/role` | Congressional roles (senator, representative) |
-| `/api/v2/committee` | Congressional committees |
-| `/api/v2/committee_member` | Committee membership |
-| `/api/v2/cosponsorship` | Bill cosponsorship records |
+| Discoverability | 66.1 |
+| Contract quality | 24.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 15.8 |
 
-**Response Formats:** JSON, JSONP, CSV, XML
+**Agent readiness 13.6** — agent-aware
 
-**Example:**
-```
-GET https://www.govtrack.us/api/v2/bill?congress=119&limit=20
-GET https://www.govtrack.us/api/v2/person?lastname=Smith
-GET https://www.govtrack.us/api/v2/vote?congress=119&limit=20
-```
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-## Data
+**Regulatory alignment 5.9** — Government & Public Sector
 
-GovTrack data covers U.S. Congress legislative activities from 1789 to the present, including:
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/govtrack/](https://apis.io/providers/govtrack/).
 
-- Bill and resolution status and full text
-- Roll call votes on legislation and procedural motions
-- Member of Congress profiles, voting records, and attendance
-- Congressional committee membership
-- Cosponsorship relationships between legislators
+## How this profile is made
 
-For bulk data needs, GovTrack recommends using the [unitedstates/congress](https://github.com/unitedstates/congress) open-source scrapers.
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-## Links
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for GovTrack: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-- **Website:** https://www.govtrack.us
-- **API Docs:** https://www.govtrack.us/developers/api
-- **Blog:** https://www.govtrack.us/blog/
-- **GitHub:** https://github.com/govtrack
-- **LinkedIn:** https://www.linkedin.com/company/govtrack
-- **X (Twitter):** https://x.com/govtrack
-- **Contact:** hello@govtrack.us
+## Open an issue
 
-## APIs.json
-
-This repository contains an [APIs.json 0.19](https://apisjson.org/) profile for GovTrack maintained by the [API Evangelist](https://apievangelist.com) project.
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/govtrack/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
